@@ -1,0 +1,48 @@
+buildscript {
+    ext {
+        buildToolsVersion = "35.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 36
+        targetSdkVersion = 36
+        ndkVersion = "27.3.13750724"
+        kotlinVersion = "2.0.21"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.9.1")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+
+        // Add the Google Services plugin dependency
+        // This is used exclusively for sending benchmarks (with user consent) to Hugging Face Spaces via Firebase.
+        // Firebase is used for App Check functionality, allowing unauthenticated users to submit their benchmark data securely.
+        classpath 'com.google.gms:google-services:4.4.4'
+    }
+}
+
+
+
+// Fix for React Native New Architecture codegen issue
+// https://github.com/facebook/react-native/issues/38237
+// Ensures codegen artifacts are generated before CMake configuration
+// project(':app') {
+//     afterEvaluate {
+//         if (tasks.findByName("preBuild")) {
+//             tasks.preBuild.doFirst {
+//                 exec {
+//                     workingDir rootDir
+//                     if (System.getProperty("os.name").toLowerCase().contains("win")) {
+//                         commandLine 'cmd', '/c', 'gradlew.bat', 'generateCodegenArtifactsFromSchema'
+//                     } else {
+//                         commandLine './gradlew', 'generateCodegenArtifactsFromSchema'
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+apply plugin: "com.facebook.react.rootproject"

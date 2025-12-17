@@ -1,0 +1,131 @@
+# .gitignore - mobile / cross-platform comprehensive
+
+# OS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.sw?
+*.kate-swp
+
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# lock files (keep for reproducible builds) - do not ignore package-lock.json / yarn.lock / pnpm-lock.yaml
+
+# React Native / Expo
+android/local.properties
+android/.gradle/
+android/.kotlin/
+android/app/build/
+android/app/.cxx/
+android/build/
+android/build_log*.txt
+android/cmake_errors.txt
+android/codegen_log.txt
+android/*_build.log
+android/hs_err_pid*.log
+android/replay_pid*.log
+**/build/
+ios/Pods/
+ios/build/
+.expo/
+.expo-shared/
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.flutter-plugins-dependencies
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+.flutter-plugins
+
+# Android / Gradle
+.gradle/
+*.lock
+gradle-app.setting
+gradle-wrapper.jar
+*.keystore
+debug.keystore
+
+# Xcode / iOS
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcworkspace
+*.xcscmblueprint
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Pods/
+# CocoaPods artifacts
+Pods/
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Cordova / Capacitor
+platforms/
+plugins/
+www/
+
+# Xamarin / .NET
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vs/
+*.nupkg
+packages/
+
+# Secrets / env
+.env
+.env.*.local
+.env.local
+*.pem
+*.p12
+*.jks
+keystore.properties
+*.keystore
+
+# Build artifacts / archives
+*.apk
+*.apks
+*.aab
+*.ipa
+*.xcarchive
+*.xcappdata
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.cache
+.pids
+*.pid
+
+# Misc
+coverage/
+reports/
+dist/
+.DS_Store
+Thumbs.db

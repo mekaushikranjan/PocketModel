@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "131775123456",
+    "firebase_url": "https://pocketmodel-31775.firebaseio.com",
+    "project_id": "pocketmodel-31775",
+    "storage_bucket": "pocketmodel-31775.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131775123456:android:abcdef0123456789",
+        "android_client_info": {
+          "package_name": "com.pocketmodel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131775123456-abcdefghijklmnopqrstuvwxyz123456.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbcdefghijklmnopqrstuvwxyz123456"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131775123456-abcdefghijklmnopqrstuvwxyz123456.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
